@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false, // 允许编译 javascript 文件
+    "checkJs": false, // 报告 javascript 文件中的错误
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true, // 报告 switch 语句的 fallthrough 错误。（即，不允许 switch 的 case 语句贯穿）
+    "noImplicitAny": false, // 在表达式和声明上有隐含的 any类型时报错
+    "noImplicitThis": false,
+    "allowImportingTsExtensions": false,
+    "paths": {
+      "": ["./node_modules"],
+      "GLOBAL": ["global"],
+      "GLOBAL/*": ["global/*"],
+      "CMT/*": ["assets/components/*"],
+      "IMG/*": ["assets/img/*"],
+      "TS/*": ["typings/*"],
+      "STYLE/*": ["assets/style/*"],
+      "UTIL": ["assets/utils"],
+      "UTIL/*": ["assets/utils/*"],
+      "DIRECTIVE/*": ["assets/directive/*"],
+      "MIXIN/*": ["assets/mixins/*"],
+      "LIB/*": ["assets/libs/*"],
+      "ENV": ["env"],
+      "ENV/*": ["env/*"],
+      "MIYACOMMON/*": ["miya/common/*"],
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "esnext",
+    "types": ["webpack-env", "node"],
+    "typeRoots": ["node_modules/@types", "typings"],
+    "useDefineForClassFields": true
+  },
+  "include": ["miya/*", "assets/**/*", "global/*", "oxygen/0000/*", "oxygen/2021/*"],
+  "exclude": [
+    "node_modules",
+    "**/oxui/**/*",
+    "oxygen/**/js/*.ts",
+    "oxygen/common/**/*",
+    "oxygen/onetime/**/*"
+  ]
+}

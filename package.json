@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "XaYoZe",
+    "email": "yang6450867@gmail.com"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^4.4.9"
+  },
+  "browser": {
+    "path": "path-browserify"
+  },
+  "scripts": {
+    "dev": "node --trace-warnings config/index.js server -i --proj",
+    "build": "node --trace-warnings config/index.js build -i --proj"
+  }
+}
